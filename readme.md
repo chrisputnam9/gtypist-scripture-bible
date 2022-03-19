@@ -10,8 +10,17 @@ Only a small excerpt has been implemented so far as a proof of concept. Stay tun
 Dynamically generate typing lessons with various versions, languages and preferences, using https://scripture.api.bible/
 
 ## Milestones
- 0. Review gtypist tools
-	- See what can be used and what remains to be built
+ 0. Review gtypist tools - See what can be used and what remains to be built
+	- gtypist.vim - syntax for vim
+		- Put in ~/.vim/syntax/
+	- gtypist.pm
+		- perl script
+		- functions to create a menu + jump-table for a set of gtypist-lessons
+		- plus some miscellaneous functions to convert to gtypist-lessons
+	- typcombine
+		- awk script
+		- combine several typ files into a single large one
+		- Seems to be hardcoded for built-in lessons
  1. Create pglb - PHP Gtypist Lesson Builder
 	- Takes text file as argument
 	- Takes output file as argument - default to base on text file name
