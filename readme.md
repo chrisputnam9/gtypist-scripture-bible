@@ -21,17 +21,19 @@ Dynamically generate typing lessons with various versions, languages and prefere
 		- awk script
 		- combine several typ files into a single large one
 		- Seems to be hardcoded for built-in lessons
- 1. Create pglb - PHP Gtypist Lesson Builder
+ 1. Create php-gtypist-lesson-builder
 	- Takes text file as argument
 	- Takes output file as argument - default to base on text file name
 	- Use to generate John Chapter 1 as example
- 2. Create file to be run using pglb in this project
+ 2. Create php-bible-api-client
+	- Reads from API.Bible
+ 3. Create script to pull everything together
 	- Takes book as argument, or "all-books"
 	- Takes output directory as argument - default to cwd
 	- Hits scripture.api.bible
 	- Generates a lesson for each book, named by book
-	- Create an index lesson
- 3. Expand preferences
+	- Combine all lessons into one single file
+ 4. Expand preferences
 	- Verse numbers
 	- Versions
 	- Etc?
